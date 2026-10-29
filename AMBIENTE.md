@@ -60,12 +60,22 @@ graphify update .          # constrói/reconstrói graphify-out/graph.json (sem 
 graphify explain "main.py" # explica nó e vizinhos
 start graphify-out/graph.html   # grafo interativo no navegador
 
-# Obsidian: abrir vault "CodexVault" (já registrado)
+# Obsidian: start obsidian://open?vault=CodexVault (vault já registrado; Ctrl+G = graph view)
 ```
 
-## 5. Pendências (dono: usuário)
+## 5. Pendências — críticas ZERO ✅ (29/10/2026)
 
-1. ✅ ~~Identidade git~~ e ~~`gh auth login`~~ — resolvidos em 29/10/2026 (conta douglaspenadearruda97, token no keyring, `gh auth setup-git` aplicado).
-2. Opcional: VS Code (`choco install vscode -y`) — não instalado (já há ZCode + Notepad++).
-4. Opcional: `graphify install --platform codex` para skill do Graphify no Codex CLI.
-5. Opcional: `GEMINI_API_KEY`/`GOOGLE_API_KEY` para extração semântica (LLM) do Graphify.
+Restam apenas opcionais (dono: usuário):
+1. VS Code (`choco install vscode -y`) — já há ZCode + Notepad++.
+2. `graphify install --platform codex` — skill do Graphify no Codex CLI.
+3. `GEMINI_API_KEY`/`GOOGLE_API_KEY` — extração semântica (LLM) do Graphify.
+4. Fechar issue de teste #1 e definir descrição do repo `master` — cosmético.
+5. Decisão de visibilidade do repo `master` (hoje público; conteúdo sem segredos).
+
+## 6. Repos GitHub (dono: douglaspenadearruda97)
+
+| Repo | Visibilidade | Papel |
+|---|---|---|
+| [`master`](https://github.com/douglaspenadearruda97/master) | público | Config/documentação do servidor (este AMBIENTE.md) |
+| [`codex-vault`](https://github.com/douglaspenadearruda97/codex-vault) | privado | Vault Obsidian: notas + grafos de conhecimento |
+| [`projeto1`](https://github.com/douglaspenadearruda97/projeto1) | privado | Primeiro projeto real (Python 3.13 via uv, calculadora, grafo de código) |
